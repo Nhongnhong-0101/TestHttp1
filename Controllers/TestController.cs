@@ -8,12 +8,6 @@ namespace TestHttp1.Controllers
     [ApiController]
     public class TestController : ControllerBase
     {
-        [HttpGet]
-        public IActionResult Get()
-        {
-            return Ok("Get thành công");
-        }
-
         [HttpPost]
         public IActionResult Post([FromBody] TestData data)
         {
